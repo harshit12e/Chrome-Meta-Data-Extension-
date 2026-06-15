@@ -2,6 +2,10 @@
 
 A Chrome Manifest V3 extension that shows what metadata the current website can see, stores, requests, and sends while you browse.
 
+<img width="358" height="538" alt="Meta Data Screenshhot" src="https://github.com/user-attachments/assets/39ca0b3b-c154-44b5-b81a-85fdf1d521f1" />
+
+
+
 ## What it can show
 
 - Browser and device metadata exposed to websites, such as user agent, language, timezone, screen size, hardware threads, and touch support.
@@ -23,3 +27,6 @@ A Chrome Manifest V3 extension that shows what metadata the current website can 
 ## Important limitation
 
 No extension can perfectly prove every piece of data a website extracts. This extension reports what Chrome exposes, what the page appears structured to collect, what requests and headers are visible to the extension, and sensitive browser API calls it can observe.
+
+
+
