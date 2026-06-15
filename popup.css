@@ -1,0 +1,181 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f8fa;
+  --panel: #ffffff;
+  --ink: #17202a;
+  --muted: #637083;
+  --line: #d9dee7;
+  --accent: #176b5b;
+  --warn: #a74d00;
+  --bad: #a82d3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 420px;
+  min-height: 520px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 13px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 3px 0 0;
+  color: var(--muted);
+}
+
+button {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 6px;
+  min-height: 34px;
+  cursor: pointer;
+}
+
+#refreshButton {
+  width: 36px;
+  font-size: 18px;
+}
+
+main {
+  padding: 14px;
+}
+
+.scoreRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.scoreRow div {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.scoreRow strong {
+  display: block;
+  font-size: 22px;
+}
+
+.scoreRow span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  min-width: 0;
+  padding: 7px 6px;
+  font-weight: 600;
+}
+
+.tabs button.active {
+  border-color: var(--accent);
+  background: #e9f4f1;
+  color: #104b40;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+.section {
+  margin-bottom: 10px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section h2 {
+  margin: 0;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.item {
+  padding: 9px 12px;
+  border-top: 1px solid #eef1f5;
+  overflow-wrap: anywhere;
+}
+
+.item:first-of-type {
+  border-top: 0;
+}
+
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.value {
+  display: block;
+  margin-top: 2px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 12px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #fff;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.empty {
+  padding: 14px 12px;
+  color: var(--muted);
+}
+
+.warn {
+  color: var(--warn);
+}
+
+.bad {
+  color: var(--bad);
+}

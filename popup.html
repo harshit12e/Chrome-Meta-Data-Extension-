@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metadata Watch</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Metadata Watch</h1>
+        <p id="pageHost">Inspecting this tab</p>
+      </div>
+      <button id="refreshButton" title="Refresh snapshot" aria-label="Refresh snapshot">↻</button>
+    </header>
+
+    <main>
+      <section class="scoreRow">
+        <div>
+          <strong id="riskScore">0</strong>
+          <span>risk score</span>
+        </div>
+        <div>
+          <strong id="thirdPartyCount">0</strong>
+          <span>third-party requests</span>
+        </div>
+        <div>
+          <strong id="cookieCount">0</strong>
+          <span>cookies</span>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="Metadata categories">
+        <button class="active" data-tab="summary">Summary</button>
+        <button data-tab="network">Network</button>
+        <button data-tab="device">Device</button>
+        <button data-tab="forms">Forms</button>
+      </nav>
+
+      <section class="panel active" id="summary"></section>
+      <section class="panel" id="network"></section>
+      <section class="panel" id="device"></section>
+      <section class="panel" id="forms"></section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
